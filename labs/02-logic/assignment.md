@@ -1,4 +1,4 @@
-# Lab 2: YOUR_FIRSTNAME LASTNAME
+# Lab 2: YOUR_FIRSTNAME LASTNAMEE
 
 ### 2-bit comparator
 
@@ -6,21 +6,32 @@
 
    Greater than:
 
-   ![K-maps](images/kmap_empty.png)
-
+  |B1B0/A1A0| **00** | **01** | **11** | **10** |
+  | :-:    | :-:    | :-:    | :-:    | :-:    |
+  | **00** |   0    |   0    |   0    |   0    |
+  | **01** |   1    |   0    |   0    |   0    |
+  | **11** |   1    |   1    |   0    |   1    |
+  | **10** |   1    |   1    |   0    |   0    |
+  
    Less than:
-
-   ![K-maps](images/kmap_empty.png)
+   
+  |B1B0/A1A0| **00** | **01** | **11** | **10** |
+  | :-:    | :-:    | :-:    | :-:    | :-:    |
+  | **00** |   0    |   1    |   1    |   1    |
+  | **01** |   0    |   0    |   1    |   1    |
+  | **11** |   0    |   0    |   0    |   1    |
+  | **10** |   0    |   0    |   1    |   0    |
+   
 
 2. Equations of simplified SoP (Sum of the Products) form of the "greater than" function and simplified PoS (Product of the Sums) form of the "less than" function.
 
-   ![Logic functions](images/comparator_min.png)
+   ![Logic functions](images/vzorce.PNG)
 
 ### 4-bit comparator
 
 1. Listing of VHDL stimulus process from testbench file (`testbench.vhd`) with at least one assert (use BCD codes of your student ID digits as input combinations). Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
-   Last two digits of my student ID: **xxxx??**
+   Last two digits of my student ID: **16**
 
 ```vhdl
     p_stimulus : process
