@@ -40,15 +40,15 @@
         report "Stimulus process started" severity note;
 
         -- First test case
-        s_b <= "0001"; -- Such as "0101" if ID = xxxx56  - (0101 = 5)  (0001 = 1)
-        s_a <= "0011";        -- Such as "0110" if ID = xxxx56  - (0110 = 6)  (0011 = 3)
+        s_b <= "0001"; -- (0001 = 1)
+        s_a <= "0011"; -- (0011 = 3)
         wait for 100 ns;
         -- Expected output
-        assert ((s_B_greater_A = 'WRITE_CORRECT_VALUE_HERE') and
-                (s_B_equals_A  = 'WRITE_CORRECT_VALUE_HERE') and
-                (s_B_less_A    = 'WRITE_CORRECT_VALUE_HERE'))
+        assert ((s_B_greater_A = '0') and
+                (s_B_equals_A  = '0') and
+                (s_B_less_A    = '1'))
         -- If false, then report an error
-        report "Input combination COMPLETE_THIS_TEXT FAILED" severity error;
+        report "Input combination 0001, 0011 FAILED" severity error;
 
         -- Report a note at the end of stimulus process
         report "Stimulus process finished" severity note;
