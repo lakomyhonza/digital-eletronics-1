@@ -49,7 +49,7 @@ p_stimulus : process
                 (s_B_equals_A  = '0') and
                 (s_B_less_A    = '1'))
         -- If false, then report an error
-        report "Input combination 0000, 0111 FAILED" severity error;
+        report "Input combination 0001, 0111 FAILED" severity error;
 
  		-- Second test case
         s_b <= "0011"; 		-- Such as "0011" if ID = xxxx31
@@ -60,7 +60,7 @@ p_stimulus : process
                 (s_B_equals_A  = '0') and
                 (s_B_less_A    = '0'))
         -- If false, then report an error
-        report "Input combination 0000, 0111 FAILED" severity error;
+        report "Input combination 0011, 0001 FAILED" severity error;
         
          -- Third test case
         s_b <= "0011"; 		-- Such as "0011" if ID = xxxx33
@@ -71,7 +71,7 @@ p_stimulus : process
                 (s_B_equals_A  = '0') and
                 (s_B_less_A    = '1'))
         -- If false, then report an error
-        report "Input combination 0000, 0111 FAILED" severity error;
+        report "Input combination 0011, 0011 FAILED" severity error;
         -- Report a note at the end of stimulus process
         report "Stimulus process finished" severity note;
         wait;
