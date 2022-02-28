@@ -80,7 +80,7 @@ p_stimulus : process
 
 2. Text console screenshot during your simulation, including reports.
 
-   ![image](https://user-images.githubusercontent.com/99681304/156054130-03821754-12b4-433d-8d09-a87f13b25e59.png)
+   ![image](https://user-images.githubusercontent.com/99681304/156056978-e536140e-d00e-47de-b88f-5ee9f5efc59b.png)
 
 3. Link to your public EDA Playground example:
 
