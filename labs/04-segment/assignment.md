@@ -66,7 +66,7 @@ p_stimulus : process
 
 2. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+   ![image](https://user-images.githubusercontent.com/99681304/157415283-5b5f3b42-e11a-4edf-b7d6-ae8a1bb4ade3.png)
 
 ### LED(7:4) indicators
 
