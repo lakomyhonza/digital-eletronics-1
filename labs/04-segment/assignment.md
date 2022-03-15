@@ -6,24 +6,12 @@
 1. Listing of VHDL stimulus process from testbench file (`tb_hex_7seg.vhd`) with asserts. Verify all input combinations. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
 ```vhdl
-<<<<<<< HEAD
-    p_stimulus : process
-=======
 p_stimulus : process
->>>>>>> 60f59a4d2a8744e7125aa3c33d46bb93b2cb159d
-    begin
+   
+     begin
+    
         report "Stimulus process started" severity note;
 
-        -- First test case
-        s_hex <= "0000"; wait for 50 ns;
-<<<<<<< HEAD
-        assert (s_seg = "0000001")
-        report "Input combination 0000 FAILED" severity error;
-
-
-        -- WRITE OTHER TEST CASES HERE
-
-=======
         assert (s_seg = "0000001") -- 0
         report "Input combination 0000 FAILED" severity error
         s_hex <= "0001"; wait for 50 ns;
@@ -71,7 +59,6 @@ p_stimulus : process
         s_hex <= "1111"; wait for 50 ns;
         assert (s_seg = "0111000") -- F
         report "Input combination 1111 FAILED" severity error;
->>>>>>> 60f59a4d2a8744e7125aa3c33d46bb93b2cb159d
 
         report "Stimulus process finished" severity note;
         wait;
@@ -80,11 +67,7 @@ p_stimulus : process
 
 2. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-<<<<<<< HEAD
-   ![your figure]()
-=======
    ![image](https://user-images.githubusercontent.com/99681304/157415283-5b5f3b42-e11a-4edf-b7d6-ae8a1bb4ade3.png)
->>>>>>> 60f59a4d2a8744e7125aa3c33d46bb93b2cb159d
 
 ### LED(7:4) indicators
 
@@ -105,8 +88,3 @@ p_stimulus : process
 
    -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
    -- LED(7) <= WRITE YOUR CODE HERE
-<<<<<<< HEAD
-   ```
-=======
-   ```
->>>>>>> 60f59a4d2a8744e7125aa3c33d46bb93b2cb159d
