@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-# Lab 4: YOUR_FIRSTNAME LASTNAME
-=======
+
 # Lab 4: Jan Lakomý
->>>>>>> 60f59a4d2a8744e7125aa3c33d46bb93b2cb159d
 
 ### Seven-segment display decoder
 
