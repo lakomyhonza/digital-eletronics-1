@@ -7,10 +7,9 @@
 
 ```vhdl
 p_stimulus : process
-   
-     begin
-    
-        report "Stimulus process started" severity note;
+   begin
+       
+       report "Stimulus process started" severity note;
 
         assert (s_seg = "0000001") -- 0
         report "Input combination 0000 FAILED" severity error
