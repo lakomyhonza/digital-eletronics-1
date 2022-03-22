@@ -18,7 +18,7 @@ begin
     --------------------------------------------------------
     p_d_ff_rst : process(clk)
     begin
-        if rising_edge(clk) then  -- Synchronous process
+        if rising_edge(clk) then 
                 if (rst = '1')then               
                     q <= '0';
                     q_bar <= '1';  
