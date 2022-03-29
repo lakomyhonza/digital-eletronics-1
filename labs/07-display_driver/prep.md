@@ -1,5 +1,5 @@
 
-![wavedrom](https://user-images.githubusercontent.com/99534053/160382873-1ad13f18-7d8e-4c13-91a4-35a86499e6f0.png)
+![wavedrom](images/wavedrom_7-segment.png)
 
 
 ```javascript
