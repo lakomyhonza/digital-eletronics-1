@@ -24,8 +24,6 @@ end Behavioral;
 
 2. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
-
    ![simulace](https://user-images.githubusercontent.com/99681304/156935643-27bccd1f-2576-45b7-88b3-ddd4060e94c4.png)
 
 
