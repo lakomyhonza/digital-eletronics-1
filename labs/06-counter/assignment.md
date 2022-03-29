@@ -16,7 +16,8 @@
                 s_cnt_local <= (others => '0'); -- Clear all bits
 
             elsif (en_i = '1') then -- Test if counter is enabled
-               -- TEST COUNTER DIRECTION HERE
+              
+                --  Test counter direction
                 if (cnt_up_i = '1') then
                     s_cnt_local <= s_cnt_local + 1;
                 else 
@@ -57,7 +58,7 @@ architecture testbench of tb_cnt_up_down_16bit is
     --Local signals
     signal s_clk_100MHz : std_logic;
     signal s_reset      : std_logic;
-    signal s_en_16bit        : std_logic;
+    signal s_en_16bit   : std_logic;
     signal s_cnt_up     : std_logic;
-    signal s_cnt_16        : std_logic_vector(c_CNT_WIDTH - 1 downto 0);
+    signal s_cnt_16     : std_logic_vector(c_CNT_WIDTH - 1 downto 0);
 ```
